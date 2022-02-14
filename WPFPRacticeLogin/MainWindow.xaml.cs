@@ -24,5 +24,22 @@ namespace WPFPRacticeLogin
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string email = emailBoxUI.Text;
+            string password = passwordBoxUI.Password;
+
+            if (string.IsNullOrEmpty(email))
+                MessageBox.Show("Enter Email");
+            else if (string.IsNullOrEmpty(password))
+                MessageBox.Show("Enter Password");
+            else
+            { MessageBox.Show("Saved Successfully"); 
+                emailBoxUI.Clear();
+                passwordBoxUI.Clear();
+            }
+             
+        }
     }
 }
