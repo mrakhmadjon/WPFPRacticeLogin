@@ -1,0 +1,62 @@
+﻿<Window xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Class="WPFPRacticeLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPRacticeLogin"
+        mc:Ignorable="d"
+        Background="aqua"
+        Title="Login Page" Height="600" Width="700">
+    <Border Background="White"
+            Width="500"
+            Height="450"
+            CornerRadius="10"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Padding="20">
+        <StackPanel>
+            <Label FontWeight="Bold" 
+                   HorizontalAlignment="Center"
+                   FontSize ="30"
+                   Foreground="#405D86"
+                   FontFamily="Britannic Bold">
+                Welcome Back
+            </Label >
+            
+            <Label HorizontalAlignment="Center"
+                   FontSize="16"
+                   Foreground ="#CBD3DF"
+                   >Enter your credetinal  to access your account</Label>
+
+
+            <Border Margin="0 30"
+                    Height="50"
+                    BorderThickness="2"
+                    BorderBrush="Gray"
+                    CornerRadius="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <materialDesign:PackIcon Grid.Column="0"
+                                             Kind="Email"
+                                             Foreground="blue"
+                                             Width="30"
+                                             Height="30"
+                                             VerticalAlignment="Center"
+                                             HorizontalAlignment="Center"
+                                             />
+                    <TextBox Grid.Column ="1"
+                             />
+                </Grid>
+            </Border>
+            
+            <TextBox></TextBox>
+            <TextBox></TextBox>
+            <Button>Sign in </Button>
+        </StackPanel>
+
+    </Border>
+</Window>
