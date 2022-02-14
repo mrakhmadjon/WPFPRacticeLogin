@@ -20,7 +20,7 @@
                    HorizontalAlignment="Center"
                    FontSize ="30"
                    Foreground="#405D86"
-                   FontFamily="Britannic Bold">
+                   >
                 Welcome Back
             </Label >
             
@@ -30,10 +30,10 @@
                    >Enter your credetinal  to access your account</Label>
 
 
-            <Border Margin="0 30"
-                    Height="50"
-                    BorderThickness="2"
-                    BorderBrush="Gray"
+            <Border Margin="0 30 0 0"
+                    Height="45"
+                    BorderThickness="1"
+                    BorderBrush="Aqua"
                     CornerRadius="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -42,19 +42,48 @@
                     </Grid.ColumnDefinitions>
                     <materialDesign:PackIcon Grid.Column="0"
                                              Kind="Email"
-                                             Foreground="blue"
-                                             Width="30"
-                                             Height="30"
+                                             Foreground="Aqua"
+                                             Width="25"
+                                             Height="25"
                                              VerticalAlignment="Center"
                                              HorizontalAlignment="Center"
                                              />
                     <TextBox Grid.Column ="1"
-                             />
+                             materialDesign:HintAssist.Hint="Enter Your Email"
+                             Margin="5"
+                             BorderThickness="0"
+                             FontSize ="16"
+                             Foreground="MidnightBlue"/>
                 </Grid>
             </Border>
-            
-            <TextBox></TextBox>
-            <TextBox></TextBox>
+
+            <Border Margin="0 30"
+                    Height="45"
+                    BorderThickness="1"
+                    BorderBrush="Aqua"
+                    CornerRadius="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <materialDesign:PackIcon Grid.Column="0"
+                                             Kind="Lock"
+                                             Foreground="Aqua"
+                                             Width="25"
+                                             Height="25"
+                                             VerticalAlignment="Center"
+                                             HorizontalAlignment="Center"
+                                             />
+                    <PasswordBox Grid.Column ="1"
+                             materialDesign:HintAssist.Hint="Enter Your Password"
+                             Margin="5"
+                             BorderThickness="0"
+                             FontSize ="16"
+                             Foreground="MidnightBlue"/>
+                </Grid>
+            </Border>
+
             <Button>Sign in </Button>
         </StackPanel>
 
